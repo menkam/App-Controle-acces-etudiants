@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.Connexion"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.CONNEXION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.Scanner"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.SCANNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.Accueille"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.ACCUEILLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.Deconnexion"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.DECONNEXION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.Session"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.SESSION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.AccueilleAdmin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.ACCUEILLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.ModifierEtudiant"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.MODIFIERETUDIANT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.ModifierPersonnel"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.admin.MODIFIERPERSONNEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="DetailActivity"
+            android:label="Details" >
+        </activity>
+        
+        <activity android:name="MyPreferenceActivity" ></activity>
+    
+        <service android:name="RssDownloadService" ></service>
+        
+    </application>   
+
+</manifest>

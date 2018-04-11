@@ -1,0 +1,54 @@
+package cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.widget.ProgressBar;
+import cm.uds.iut.gi.lir2017.projet.fin_detude.blundell.tut.task.LoadingTask;
+import cm.uds.iut.gi.lir2017.projet.fin_detude.blundell.tut.task.LoadingTask.LoadingTaskFinishedListener;
+
+public class SplashActivity extends Activity implements LoadingTaskFinishedListener {
+	
+	MediaPlayer splashSound;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        
+        splashSound = MediaPlayer.create(getApplicationContext(), R.raw.splash_sound);
+        splashSound.start();
+        
+
+        // Show the splash screen
+        setContentView(R.layout.activity_splash);
+        // Find the progress bar
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.activity_splash_progress_bar);
+        // Start your loading
+        new LoadingTask(progressBar, this).execute("www.google.co.uk"); // Pass in whatever you need a url is just an example we don't use it in this tutorial
+    }
+
+    // This is the callback for when your async task has finished
+    @Override
+	public void onTaskFinished() {
+		completeSplash();
+	}
+
+    private void completeSplash(){
+    	splashSound.release();
+		startApp();
+		finish(); // Don't forget to finish this Splash Activity so the user can't return to it!
+    }
+
+    private void startApp() {
+    	Intent i = new Intent("cm.uds.iut.gi.lir2017.projet.fin_detude.controle_acces.CONNEXION");
+        startActivity(i);
+	}
+    
+    @Override
+    protected void onPause() {
+        super.onPause();
+        splashSound.release();
+        finish();
+    }
+}

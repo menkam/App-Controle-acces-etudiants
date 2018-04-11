@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contrôle d\'accès</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan">Scan</string>
+    <string name="titre_connexion">CONNEXION</string>
+    <string name="lib_login">"LOGIN :"</string>
+    <string name="lib_password">PASSWORD :</string>
+    <string name="btn_envoyer">CONNECT</string>
+    <string name="btn_reset">RESET</string>
+    <string name="content_button">"bouton avec action "</string>
+    <string name="content_text">zone de texte</string>
+    <string name="btn_sacn">SCANNER LE CODE</string>
+    <string name="message">En attente d\'informations....</string>
+    <string name="message1">ACCES REFUSER</string>
+    <string name="message2">DEJA IDENTIFIER</string>
+    <string name="message3">ACCES AUTORISE</string>
+    <string name="lib_nbreEtud">Etudiants Présents : </string>
+    <string name="contenuVide"></string>
+    <string name="matricule">Matricule :</string>
+    <string name="nom">Nom :</string>
+    <string name="prenom">Prénom :</string>
+    <string name="matiere">Matière :</string>
+    <string name="regime">régime :</string>
+    <string name="numTable">N° Table :</string>
+    <string name="nbrPlace">0</string>
+    
+    <string name="iut">IUT-FV</string>
+    <string name="bdjn">BANDJOUN</string>
+    <string name="activity_splash_title_line_one">PROJET DE FIN D\'ETUDE</string>
+    <string name="activity_splash_title_line_two">Contrôle d\'accès aux Examens</string>
+    <string name="activity_splash_title_line_three">Chargement....</string>
+    <string name="loginpardefaut">admin</string>
+    <string name="motdepassepardefaut">admin</string>
+    <string name="lib_format">Format :</string>
+    <string name="lib_contents">Information :</string>
+    <string name="btnAnnalyseScan">Annalyser</string>
+    <string name="btn_retour">Nouveau scan</string>
+    <string name="descrImage">Image de l\'etudiant</string>
+    <string name="txt_update_etudiant">Modifier Etudiant</string>
+    <string name="txt_update_personnel">Modifier Personnel</string>
+    <string name="text_recherche">"MATRICULE : "</string>
+    <string name="telephone">"Téléphone : "</string>
+    <string name="code_bar">"Code_bar : "</string>
+    <string name="email">"Email : "</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="annuler">Annuler</string>
+    <string name="effacer">Effacer</string>
+    <string name="date_naiss">"DateNais : "</string>
+    <string name="photo">"Photo : "</string>
+    <string name="rechercher_info_etudiant">Rechercher</string>
+    <string name="matricule_par_defaut">CM-UDS-14IUT0004</string>
+    
+    
+    
+</resources>
